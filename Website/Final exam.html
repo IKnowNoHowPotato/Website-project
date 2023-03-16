@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel VIllafranca Abalos FInal examination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="Final exam.html"><img src="images/Logo.PNG"></a>
+            <div class="nav-links">
+                <i class="fa-regular fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="Final exam.html">HOME</a></li>
+                    <li><a href="ABOUT.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-regular fa-bar" onclick="showmenu()"></i>
+        </nav>
+        <div class="Text-box">
+            <h1>Top-Tier Gaming Industry</h1>
+            <p>The best of the best in the gaming industry. Gathering together all <br>greatest players in the globe to compete in livestreams and highlights.</p>
+            <a href="https://discord.gg/DdMWU97Neg" class="discord-btn">Join Our Discord to know more.</a>
+        </div>
+    </section>
+    <section class="info">
+        <h1>HOW TO JOIN</h1>
+        <p>join us by following this easy-step below.</p>
+        <div class="row">
+            <div class="info-col">
+                <h3>PLAY!</h3>
+                <p>Play any game that you want.<br>Your game must be appropriate.<br>You must not, in particular, be boring. </p>
+            </div>
+            <div class="info-col">
+                <h3>RECORD</h3>
+                <p>Clip your Funny,cool,awesome and Epic Gameplay.</p>
+            </div>
+            <div class="info-col">
+                <h3>UPLOAD</h3>
+                <p>Upload the video of your best gameplay <a href="" class="linkcolor">HERE!</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="what">
+        <h1>What we do?</h1>
+        <p>We're looking for a player who has the potential to become famous as a result of their clips. With our assistance, they will have the opportunity to become well-known in the industry.</p>
+        <div class="whatvid">
+                <video width="640" height="480" controls>
+                <source src="images/epicgameplay.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";}
+            function hidemenu(){
+                navLinks.style.right="-200px";
+
+        }
+    </script>
+</body>
+</html>

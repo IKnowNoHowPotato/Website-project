@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/wallpaper.png);
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 4% 12%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: aqua;
+    text-decoration: none;
+    font-size: 30px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: blue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.Text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.Text-box h1{
+    font-size: 82px;
+}
+.Text-box p{
+    margin: 10px 0 40px;
+    font-size: 28px;
+    color: white;
+}
+.discord-btn{
+    display: inline;
+    text-decoration: none;
+    color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    padding: 2px 28px;
+    font-size: 26px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.discord-btn:hover{
+    border: 1px solid cornflowerblue;
+    background: cornflowerblue;
+    color: white;
+    transition: 1s;
+}
+nav .fa-regular{
+    display: none;
+}
+
+@media(max-width: 700px){
+
+    .Text-box {font-size: 14px;}
+    .nav-links ul li{display: block;}
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa-regular{
+        display: block;
+        color: rgb(0, 0, 0); 
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*----info----*/
+
+.info{
+    width: 80%;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.info{
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10;
+}
+.row{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.info-col{
+    flex-basis: 31%;
+    background: #464646;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+.info-col:hover{
+    box-shadow: 0 0 20px 0px rgb(87, 87, 87);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.what{
+    width: 100%;
+    background-color: black;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.what h1{
+    color: #f44336;
+}
+div.whatvid{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.linkcolor{
+    color:#f44336;
+}
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/bakground.gif);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col h1{
+    color: black;
+}
+.about-col p{
+    color: black;
+}
+
+.contacts{
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(10, 1, 63);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col p{
+    color: black;
+}
